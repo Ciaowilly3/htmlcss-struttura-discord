@@ -1,12 +1,15 @@
 *{
     margin: 0;
+    font-family: arial;
 }
 /* creo delle classi universali per stili ripetuti come il bordo */
 
 .border{
     border: 1px dashed black;
 }
-
+.dflex{
+    display: flex;
+}
 
 /* coloro l'header e lo uso come contenitore per la nav */
 header{
@@ -26,10 +29,7 @@ header nav {
     justify-content: space-between;   
 }
 
-/* creo una classa dflex per conferire la proprietà flex e stilizzo l'interno della nav */
-.dflex{
-    display: flex;
-}
+/* stilizzo l'interno della nav */
 
 nav div ul{
     display: flex;
@@ -74,9 +74,17 @@ quali il colore è l'unica cosa che cambia e per rendere il codice semplice da m
 .green{
     background-color: green;
 }
-
+.salmon{
+    background-color: #f08080;
+}
+.watergreen{
+    background-color: #20b2aa;
+}
 .height-standard{
     height: 300px;
+}
+.height350{
+    height: 350px;
 }
 .height400{
     height: 400px;
@@ -89,7 +97,6 @@ quali il colore è l'unica cosa che cambia e per rendere il codice semplice da m
 }
 /* creo diverse classi per ogni div */
 main .container{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -102,7 +109,6 @@ main .container{
 
 .contanier-universal{
     /* avendo sezioni con container di stesse dimensioni creo una classe universale */
-    display: flex;
     width: 800px;
 }
 
@@ -112,4 +118,38 @@ main .container{
 
 .container-smaller{
     flex-grow: 1;
+}
+
+/* inizio stili per il footer */
+.border-white{
+    border: 1px dashed white;
+}
+footer{
+    background-color: #23272a;
+    padding-top: 1rem;
+}
+
+footer .container{
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid lightgray;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+.nav-container{
+    background-color: aquamarine;
+    height: 80px;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer{
+    padding: 1px;
+}
+.button-footer{
+    display: flex;
 }
