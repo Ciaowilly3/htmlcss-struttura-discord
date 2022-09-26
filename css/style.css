@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+
+/* coloro l'header e lo uso come contenitore per la nav */
+header{
+    background-color: darkturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+/* do alla nav una grandezza fissa per poterla centrare nell'header */
+header nav {
+    display: flex;
+    background-color: sandybrown;
+    width: 800px;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+/* creo una classa dflex per conferire la proprietà flex e stilizzo l'interno della nav */
+.dflex{
+    display: flex;
+}
+
+nav div ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.logo-container{
+    flex-grow: 1;
+    justify-content: flex-start;
+    border: 1px dashed black;
+}
+
+.link-container{
+    flex-grow: 2;
+    justify-content: center;
+    border: 1px dashed black;       
+}
+
+.login-container{
+    flex-grow: 1;
+    justify-content: flex-end;
+    border: 1px dashed black;
+}
