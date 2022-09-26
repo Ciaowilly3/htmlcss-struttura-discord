@@ -1,10 +1,16 @@
 *{
     margin: 0;
 }
+/* creo delle classi universali per stili ripetuti come il bordo */
+
+.border{
+    border: 1px dashed black;
+}
+
 
 /* coloro l'header e lo uso come contenitore per la nav */
 header{
-    background-color: darkturquoise;
+    background-color: #abf2ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +20,7 @@ header{
 /* do alla nav una grandezza fissa per poterla centrare nell'header */
 header nav {
     display: flex;
-    background-color: sandybrown;
+    background-color: #daa520;
     width: 800px;
     align-items: center;
     justify-content: space-between;   
@@ -34,17 +40,76 @@ nav div ul{
 .logo-container{
     flex-grow: 1;
     justify-content: flex-start;
-    border: 1px dashed black;
 }
 
 .link-container{
     flex-grow: 2;
-    justify-content: center;
-    border: 1px dashed black;       
+    justify-content: center;     
 }
 
 .login-container{
     flex-grow: 1;
     justify-content: flex-end;
-    border: 1px dashed black;
+}
+
+/* stili per il main */
+
+/* classi per colore in modo da non dover creare troppe classi per div simili nei 
+quali il colore è l'unica cosa che cambia e per rendere il codice semplice da modulare */
+.blue{
+    background-color: #00008b;
+}
+
+.gray{
+    background-color: lightgray;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.cornflower{
+    background-color: cornflowerblue;
+}
+.green{
+    background-color: green;
+}
+
+.height-standard{
+    height: 300px;
+}
+.height400{
+    height: 400px;
+}
+.height550{
+    height: 550px;
+}
+.height600{
+    height: 600px;
+}
+/* creo diverse classi per ogni div */
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-solo{
+    width: 600px;
+    background-color: #ee82ee;
+}
+
+
+.contanier-universal{
+    /* avendo sezioni con container di stesse dimensioni creo una classe universale */
+    display: flex;
+    width: 800px;
+}
+
+.container-bigger{
+    flex-grow: 2;
+}
+
+.container-smaller{
+    flex-grow: 1;
 }
